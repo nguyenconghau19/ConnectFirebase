@@ -2,7 +2,7 @@
 import { getDatabase, ref, get, child } from 'firebase/database';
 import React, { useEffect, useState } from 'react';
 import '../firebase'
-import { TableCell, TableContainer, TableHead, TableRow, Table, TableBody, recomposeColor } from '@mui/material';
+import { TableCell, TableContainer, TableHead, TableRow, Table, TableBody } from '@mui/material';
 
 const FirebaseWithObject = () => {
     const [data, setData] = useState([]);
@@ -18,7 +18,7 @@ const FirebaseWithObject = () => {
             }
         }))
     }, [])
-    console.log(data);  
+    // console.log("Object:",data);  
     return (
         <div className='Container'>
             <h1 className='TitleContainer'>Hello  Object</h1>

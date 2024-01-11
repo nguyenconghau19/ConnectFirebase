@@ -18,7 +18,17 @@ const FirebaseWithArr = () => {
         }))
 
     }, [])
-  
+    // console.log("Array:",data);  
+    const rows = [
+        {
+            uid: 123,
+            UserName: "hau"
+        },
+        {
+            uid: 456,
+            UserName: "mi"
+        }
+    ]
     return (
         <div className='Contain'>
             <h1 className='TitleContainer'>Hello Array</h1>

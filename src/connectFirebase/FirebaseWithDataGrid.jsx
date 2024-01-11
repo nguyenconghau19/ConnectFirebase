@@ -33,14 +33,15 @@ export default function DataTable() {
       snapshot.forEach((snapshotChild) => {
         if (snapshotChild !== null) {
           hau.push({ id: snapshotChild.key, ...snapshotChild.val() })
-          setData(hau)
-
+          setData(hau);
+          // console.log("snapshotChild:", snapshotChild.val());
         }
 
       })
     }))
 
   }, [])
+  // console.log("DataGrid:", data);
 
   return (
     <div className="Container">
