@@ -28,7 +28,7 @@ const FirebaseWithArr = () => {
             uid: 456,
             UserName: "mi"
         }
-    ]
+    ] // dữ liệu {rows} cấu trúc giống {data}
     return (
         <div className='Contain'>
             <h1 className='TitleContainer'>Hello Array</h1>
